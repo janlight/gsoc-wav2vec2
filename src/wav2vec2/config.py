@@ -5,12 +5,12 @@ from dataclasses import asdict, dataclass, field
 
 @dataclass
 class Wav2Vec2Config:
-    vocab_size: int = 32
+    vocab_size: int = 1040
     dropout: int = 0.1
-    hidden_size: int = 768
+    hidden_size: int = 384
     num_heads: int = 12
     num_layers: int = 12
-    intermediate_size: int = 3072
+    intermediate_size: int = 1536
     is_gelu_approx: bool = False
     layer_norm_eps: float = 1e-5
     survival_prob: float = 1.0
@@ -67,7 +67,7 @@ class RobustWav2Vec2Config(Wav2Vec2Config):
     is_robust: bool = True
     conv_bias: bool = True
 
-    hidden_size: int = 1024
-    intermediate_size: int = 4096
+    hidden_size: int = 512
+    intermediate_size: int = 2048
     num_heads: int = 16
     num_layers: int = 24

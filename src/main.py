@@ -47,7 +47,7 @@ class TrainingArgs:
 
     # try to keep everything multiple of 128 on TPUs
     # 246000 is 768 for the transformer layer
-    audio_maxlen: int = 246000
+    audio_maxlen: int = 123000
     labels_maxlen: int = 256
 
     seed: int = 42
