@@ -5,7 +5,7 @@ from dataclasses import asdict, dataclass, field
 
 @dataclass
 class Wav2Vec2Config:
-    vocab_size: int = 1040
+    vocab_size: int = 1232
     dropout: int = 0.1
     hidden_size: int = 384
     num_heads: int = 12
